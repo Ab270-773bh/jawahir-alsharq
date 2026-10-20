@@ -1,5 +1,4 @@
 import React, { useEffect, useMemo, useState } from 'react';
-import { createRoot } from 'react-dom/client';
 import { createClient } from '@supabase/supabase-js';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Search, ShoppingBag, UserRound, Menu, X, ArrowLeft, Plus, Minus, Trash2, Heart, Instagram, Send, MessageCircle, ShieldCheck, Package, LogOut, ChevronLeft, ChevronRight, Sparkles, SlidersHorizontal } from 'lucide-react';
@@ -234,5 +233,4 @@ function AdminPanel({supabase,products,reload,user,profile,setProfile,onClose,no
  {tab==='settings'&&<form className="panel settings-form" onSubmit={saveSettings}><h2>روابط التواصل</h2><p>أدخل روابطك الحقيقية. اترك الحقل فارغاً لإخفاء الزر من واجهة المتجر.</p><label>WhatsApp — رقم مع مفتاح الدولة<input value={links.whatsapp} onChange={e=>setLinks({...links,whatsapp:e.target.value})} placeholder="مثال: 9639XXXXXXXX"/></label><label>Instagram — رابط الحساب<input value={links.instagram} onChange={e=>setLinks({...links,instagram:e.target.value})} placeholder="https://instagram.com/your-account"/></label><label>Telegram — رابط الحساب أو القناة<input value={links.telegram} onChange={e=>setLinks({...links,telegram:e.target.value})} placeholder="https://t.me/your-channel"/></label><button className="btn btn-dark">حفظ إعدادات التواصل</button></form>}
  </>}
  </main>
-}
-
+}export default App;
