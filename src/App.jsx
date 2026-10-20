@@ -235,4 +235,4 @@ function AdminPanel({supabase,products,reload,user,profile,setProfile,onClose,no
  </>}
  </main>
 }
-createRoot(document.getElementById('root')).render(<App/>);
+
