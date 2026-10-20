@@ -1,4 +1,5 @@
 # Redeploy Jawahir Alsharq
+# Rebuild after Supabase key update
 name: Deploy Jawahir Alsharq
 
 on:
